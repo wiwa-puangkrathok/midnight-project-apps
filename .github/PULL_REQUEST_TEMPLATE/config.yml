@@ -1,0 +1,24 @@
+blank_issues_enabled: false
+
+templates:
+  - name: Feature
+    description: New feature, enhancement, or refactor that adds behavior.
+    title: "feat(scope): "
+    labels:
+      - feature
+    file: feature.md
+
+  - name: Bugfix
+    description: Fix incorrect behavior or regression.
+    title: "fix(scope): "
+    labels:
+      - bugfix
+    file: bugfix.md
+
+  - name: Hotfix
+    description: Urgent production fix that should be released quickly.
+    title: "hotfix(scope): "
+    labels:
+      - hotfix
+      - urgent
+    file: hotfix.md
