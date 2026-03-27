@@ -1,14 +1,25 @@
-import { Geist, Geist_Mono, Figtree } from "next/font/google"
+import { Geist_Mono, Noto_Sans_Thai, Poppins } from 'next/font/google'
 
-import "@workspace/ui/globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@workspace/ui/lib/utils";
+import '@workspace/ui/globals.css'
 
-const figtree = Figtree({subsets:['latin'],variable:'--font-sans'})
+import { ThemeProvider } from '@/components/theme-provider'
+
+import { cn } from '@workspace/ui/lib/utils'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
+const notoSansThai = Noto_Sans_Thai({
+  subsets: ['thai'],
+  variable: '--font-sans',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
 
 const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
+  subsets: ['latin'],
+  variable: '--font-mono',
 })
 
 export default function RootLayout({
@@ -18,9 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang='en'
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", figtree.variable)}
+      className={cn(
+        'antialiased',
+        fontMono.variable,
+        'font-sans',
+        poppins.variable,
+        notoSansThai.variable
+      )}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>

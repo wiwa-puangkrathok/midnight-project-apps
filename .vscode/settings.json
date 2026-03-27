@@ -1,3 +1,66 @@
 {
-  "cSpell.words": ["hugeicons", "turbopack"]
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.format.enable": true,
+  // JS
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Extension: Git
+  "git.rebaseWhenSync": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  // Extension: Prettier
+  "prettier.requireConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // Package manager Configs
+  "npm.packageManager": "pnpm",
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "search-node-modules.path": "node_modules",
+  "markdown.extension.toc.updateOnSave": false,
+  "i18n-ally.localesPaths": [
+    "apps/space-app/locales",
+    "packages/core/configs/src/locales"
+  ],
+  "cSpell.words": [
+    "autodocs",
+    "commitlint",
+    "contentlayer",
+    "cuid",
+    "extralight",
+    "Figtree",
+    "germanys",
+    "hugeicons",
+    "ianvs",
+    "Initor",
+    "Puangkrathok",
+    "remixicon",
+    "Riverrose",
+    "Stylesheet",
+    "subheadline",
+    "tegut",
+    "turbopack",
+    "vaul",
+    "Wiwa"
+  ],
+  "css.lint.unknownAtRules": "ignore",
+  "prisma.pinToPrisma6": true
 }

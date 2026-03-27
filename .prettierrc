@@ -1,11 +1,59 @@
 {
-  "endOfLine": "lf",
-  "semi": false,
-  "singleQuote": false,
-  "tabWidth": 2,
-  "trailingComma": "es5",
-  "printWidth": 80,
-  "plugins": ["prettier-plugin-tailwindcss"],
   "tailwindStylesheet": "packages/ui/src/styles/globals.css",
-  "tailwindFunctions": ["cn", "cva"]
+  "tailwindFunctions": [
+    "cn",
+    "cva"
+  ],
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "bracketSameLine": false,
+  "jsxSingleQuote": true,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "singleQuote": true,
+  "semi": false,
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "printWidth": 80,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "importOrder": [
+    "^(react/(.*)$)|^(react$)",
+    "^(next/(.*)$)|^(next$)",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@workspace/(.*)$",
+    "",
+    "^types$",
+    "^@app/types/(.*)$",
+    "^@app/constants/(.*)$",
+    "^@app/config/(.*)$",
+    "^@app/libs/(.*)$",
+    "^@app/utils/(.*)$",
+    "^@app/hooks/(.*)$",
+    "^@app/contexts/(.*)$",
+    "^@app/services/(.*)$",
+    "^@app/components/(.*)$",
+    "^@app/(.*)$",
+    "^@app/static/(.json)$",
+    "",
+    "^[./]"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "importOrderBuiltinModulesToTop": true,
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "decorators-legacy"
+  ],
+  "importOrderMergeDuplicateImports": true,
+  "importOrderCombineTypeAndValueImports": true,
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "@ianvs/prettier-plugin-sort-imports"
+  ]
 }
